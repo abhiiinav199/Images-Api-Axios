@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "./utils/axios";
 import "./Gallery.css";
 import Loader from "../Loader";
@@ -18,6 +18,13 @@ function Gallery() {
       console.error("Error fetching images:", error);
     }
   };
+
+
+
+  
+  useEffect(() => {
+    getData()
+}, [])
   return (
     <div className="gallery_main">
       <button onClick={getData}>Click me for getting data</button>
