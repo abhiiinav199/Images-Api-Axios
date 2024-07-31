@@ -1,0 +1,11 @@
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+button{
+    padding: .85rem;
+    color: black;
+    font-size: 1.3rem;
+}
